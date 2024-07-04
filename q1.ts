@@ -10,7 +10,7 @@ interface Shop {
 }
 
 // assign interface/type to the function definition properly
-function buyItem(hero : any, shop : any) {
+function buyItem(hero : Hero, shop : Shop) {
   if(shop.price > hero.gold){
     return hero;
   }else{
